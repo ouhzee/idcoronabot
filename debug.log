@@ -13,3 +13,13 @@ nohup: ignoring input
     🇮🇩 <b>Indonesia</b> 🇮🇩\n\<code>
                                    ^
 SyntaxError: EOL while scanning string literal
+nohup: ignoring input
+  File "main.py", line 135
+    <b>Data Provinsi {dataprovince[0]}\n</b> \<code>
+                                        ^
+SyntaxError: EOL while scanning string literal
+nohup: ignoring input
+  File "main.py", line 135
+    <b>Data Provinsi {dataprovince[0]}\n</b> \<code>
+                                        ^
+SyntaxError: EOL while scanning string literal

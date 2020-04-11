@@ -132,7 +132,7 @@ def dataPressed(update, context):
         Positif     : {dataindo[0]}         ({dataindo[3]})\n\
         Sembuh      : {dataindo[1]}         ({dataindo[4]})\n\
         Meninggal   : {dataindo[2]}         ({dataindo[5]})\n\n</code>\
-        <b>Data Provinsi {dataprovince[0]}\n</b> \<code>
+        <b>Data Provinsi {dataprovince[0]}\n</b><code>\
         Positif     : {dataprovince[1]}     ({provincecounter[0]})\n\
         Sembuh      : {dataprovince[2]}     ({provincecounter[1]})\n\
         Meninggal   : {dataprovince[3]}     ({provincecounter[2]})\n\n</code>\
@@ -224,7 +224,7 @@ def cekUpdate():
                     Positif     : {dataindo[0]}         ({dataindo[3]})\n\
                     Sembuh      : {dataindo[1]}         ({dataindo[4]})\n\
                     Meninggal   : {dataindo[2]}         ({dataindo[5]})\n\n\
-                    <b>{prov_id[0]}</b>\n\<code>
+                    <b>{prov_id[0]}</b>\n<code>\
                     Positif     : {prov_id[1]}           ({counter[0]})\n\
                     Sembuh      : {prov_id[2]}           ({counter[1]})\n\
                     Meninggal   : {prov_id[3]}           ({counter[2]})</code>\n\n\
