@@ -128,7 +128,7 @@ def dataPressed(update, context):
         update.callback_query.edit_message_text(text='Fetching...')
         time.sleep(0.5)
         update.callback_query.edit_message_text(text=f'\
-        🇮🇩 <b>Indonesia</b> 🇮🇩\n\<code>
+        🇮🇩 <b>Indonesia</b> 🇮🇩\n<code>\
         Positif     : {dataindo[0]}         ({dataindo[3]})\n\
         Sembuh      : {dataindo[1]}         ({dataindo[4]})\n\
         Meninggal   : {dataindo[2]}         ({dataindo[5]})\n\n</code>\

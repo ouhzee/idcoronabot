@@ -1,0 +1,15 @@
+nohup: ignoring input
+  File "main.py", line 131
+    🇮🇩 <b>Indonesia</b> 🇮🇩\n\<code>
+                                   ^
+SyntaxError: EOL while scanning string literal
+nohup: ignoring input
+  File "main.py", line 131
+    🇮🇩 <b>Indonesia</b> 🇮🇩\n\<code>
+                                   ^
+SyntaxError: EOL while scanning string literal
+nohup: ignoring input
+  File "main.py", line 131
+    🇮🇩 <b>Indonesia</b> 🇮🇩\n\<code>
+                                   ^
+SyntaxError: EOL while scanning string literal
