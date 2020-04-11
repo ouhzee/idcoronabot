@@ -127,16 +127,15 @@ def dataPressed(update, context):
         time.sleep(0.5)
         update.callback_query.edit_message_text(text='Fetching...')
         time.sleep(0.5)
-        update.callback_query.edit_message_text(text=f'\
-        🇮🇩 <b>Indonesia</b> 🇮🇩\n<code>\
-        Positif     : {dataindo[0]}         ({dataindo[3]})\n\
-        Sembuh      : {dataindo[1]}         ({dataindo[4]})\n\
-        Meninggal   : {dataindo[2]}         ({dataindo[5]})\n\n</code>\
-        <b>Data Provinsi {dataprovince[0]}\n</b><code>\
-        Positif     : {dataprovince[1]}     ({provincecounter[0]})\n\
-        Sembuh      : {dataprovince[2]}     ({provincecounter[1]})\n\
-        Meninggal   : {dataprovince[3]}     ({provincecounter[2]})\n\n</code>\
-        <i>Last {waktu}</i>', parse_mode=ParseMode.HTML)
+        update.callback_query.edit_message_text(text=f'🇮🇩 <b>Indonesia</b> 🇮🇩\n<code>\
+Positif     : {dataindo[0]}     ({dataindo[3]})\n\
+Sembuh      : {dataindo[1]}       ({dataindo[4]})\n\
+Meninggal   : {dataindo[2]}       ({dataindo[5]})\n\n</code>\
+<b>Data Provinsi {dataprovince[0]}\n</b><code>\
+Positif     : {dataprovince[1]}   ({provincecounter[0]})\n\
+Sembuh      : {dataprovince[2]}     ({provincecounter[1]})\n\
+Meninggal   : {dataprovince[3]}    ({provincecounter[2]})\n\n</code>\
+<i>Last {waktu}</i>', parse_mode=ParseMode.HTML)
 
 
 def settingsButton(update, context):
@@ -219,16 +218,17 @@ def cekUpdate():
             dataindo = jsonparser.dataIndonesia()
             for i in chat:
                 try:
+                    time.sleep(2)
                     dispatcher.bot.send_message(chat_id=i, text=f'🦠COVID-19 UPDATE🦠\n\n\
-                    <b><i>Indonesia</i></b>\n\
-                    Positif     : {dataindo[0]}         ({dataindo[3]})\n\
-                    Sembuh      : {dataindo[1]}         ({dataindo[4]})\n\
-                    Meninggal   : {dataindo[2]}         ({dataindo[5]})\n\n\
-                    <b>{prov_id[0]}</b>\n<code>\
-                    Positif     : {prov_id[1]}           ({counter[0]})\n\
-                    Sembuh      : {prov_id[2]}           ({counter[1]})\n\
-                    Meninggal   : {prov_id[3]}           ({counter[2]})</code>\n\n\
-                    <i>Last {waktu}</i>', parse_mode=ParseMode.HTML)
+<b><i>Indonesia</i></b>\n\
+Positif     : {dataindo[0]}     ({dataindo[3]})\n\
+Sembuh      : {dataindo[1]}       ({dataindo[4]})\n\
+Meninggal   : {dataindo[2]}       ({dataindo[5]})\n\n\
+<b>{prov_id[0]}</b>\n<code>\
+Positif     : {prov_id[1]}       ({counter[0]})\n\
+Sembuh      : {prov_id[2]}       ({counter[1]})\n\
+Meninggal   : {prov_id[3]}       ({counter[2]})</code>\n\n\
+<i>Last {waktu}</i>', parse_mode=ParseMode.HTML)
                 except:
                     print(f"bot di kick dari {i}")
                 #time.sleep(1.8)

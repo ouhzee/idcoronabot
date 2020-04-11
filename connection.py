@@ -34,10 +34,10 @@ def save_settings(conn, chat_id, title, chat_type, username, prov_id):
         cur.execute('select chat_id from user_preferences where chat_id=? and prov_id=?;', (chat_id, prov_id,))
         if cur.fetchone():
             cur.execute('update user_preferences set nilai=not nilai where chat_id=? and prov_id=?;',(chat_id, prov_id))
-            print(datetime.now().strftime('%d-%M-%Y %H:%M ')+f"{chat_id} has changed settings for {prov_id}")
+            #print(datetime.now().strftime('%d-%M-%Y %H:%M ')+f"{chat_id} has changed settings for {prov_id}")
         else:
             cur.execute('insert into user_preferences (chat_id, prov_id, nilai) values(?, ?, ?);', (chat_id, prov_id, 1))
-
+        print(datetime.now().strftime('%d-%M-%Y %H:%M ')+f"{chat_id} has changed settings for {prov_id}")
     else:
         #try:
         cur.execute('insert into conversations (chat_id, title, type, username) values(?, ?, ?, ?);', (chat_id, title,chat_type, username))
