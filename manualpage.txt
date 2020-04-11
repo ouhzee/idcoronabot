@@ -1,0 +1,13 @@
+<b>Usage</b>
+    Data provided by kemenkes api,
+    updated every 15:30 followed by kemenkes press conference.
+    <code>start</code> - initiate convo.
+    <code>data</code>  - get current covid19 data
+    <code>settings</code> - set notification for incoming update
+    <code>help</code> - this text
+
+Information related with covid-19 @covid19indonesia
+Monitoring Kemenkes <a href='https://covid-monitoring.kemkes.go.id/'>click here</a>
+BNPB covid-19 Indonesia <a href='https://www.covid19.go.id/'>click here</a>
+
+<code>tandurjoy</code>
