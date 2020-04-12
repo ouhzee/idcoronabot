@@ -220,10 +220,10 @@ def cekUpdate():
                 try:
                     time.sleep(2)
                     dispatcher.bot.send_message(chat_id=i, text=f'🦠COVID-19 UPDATE🦠\n\n\
-<b><i>Indonesia</i></b>\n\
+<b><i>Indonesia</i></b>\n<code>\
 Positif     : {dataindo[0]}     ({dataindo[3]})\n\
 Sembuh      : {dataindo[1]}       ({dataindo[4]})\n\
-Meninggal   : {dataindo[2]}       ({dataindo[5]})\n\n\
+Meninggal   : {dataindo[2]}       ({dataindo[5]})\n\n</code>\
 <b>{prov_id[0]}</b>\n<code>\
 Positif     : {prov_id[1]}       ({counter[0]})\n\
 Sembuh      : {prov_id[2]}       ({counter[1]})\n\
