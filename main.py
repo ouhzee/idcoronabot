@@ -12,7 +12,7 @@ from telegram.ext import Updater, CommandHandler, PicklePersistence, MessageHand
 from datetime import datetime
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
-updater = Updater('1081827561:AAHdTmkPfJOP6HAeDuIZYwwUtVA4deVnMgw', use_context=True)
+updater = Updater('<YOUR_TOKEN>', use_context=True)
 dispatcher = updater.dispatcher
 apiUrl = "https://api.kawalcorona.com/"
 indonesia = requests.get(apiUrl + "indonesia/")
